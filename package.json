@@ -1,0 +1,28 @@
+{
+  "name": "loader-animation-ua-ph",
+  "version": "1.0.0",
+  "description": "This package is for testing",
+  "main": "./loader.js",
+  "exports": {
+    ".": {
+      "main": "./loader.js",
+      "import": "./loader.css"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usama-ph/npm-test-loader-package.git"
+  },
+  "keywords": [
+    "loader"
+  ],
+  "author": "Usama-ph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Usama-ph/npm-test-loader-package/issues"
+  },
+  "homepage": "https://github.com/Usama-ph/npm-test-loader-package#readme"
+}
