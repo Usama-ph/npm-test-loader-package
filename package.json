@@ -4,12 +4,14 @@
   "description": "This package is for testing",
   "main": "./loader.js",
   "exports": {
-    ".": {
-      "main": "./loader.js",
+      ".": {
+      "main": "./dist/loader.js",
       "import": "./loader.css"
     }
   },
   "scripts": {
+    "build": "npx babel src --out-dir dist",
+    "start": "npx babel src --watch --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/Usama-ph/npm-test-loader-package/issues"
   },
-  "homepage": "https://github.com/Usama-ph/npm-test-loader-package#readme"
+  "homepage": "https://github.com/Usama-ph/npm-test-loader-package#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2"
+  }
 }
